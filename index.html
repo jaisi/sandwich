@@ -3,65 +3,80 @@
 <head>
 	<title>Sandwich Maker</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 </head>
 <body>
 
-<div id="bread">
-	<h3>Bread</h3>
-	<select id="sel-bread">
-						<option value="wheat">Wheat</option>
-						<option value="italian">Italian</option>
+<div id="container">
+	<div class="form-group">
+		<div class="jumbotron"><h2><center>Sandwich Maker!!!</center></h2>
+			<div id="final-order"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<label>Bread</label>
+				<select id="sel-bread" multiple class="form-control">
+									<option value="none" class="list-group-item">None</option>
+									<option value="wheat" class="list-group-item">Wheat</option>
+									<option value="italian" class="list-group-item">Italian</option>
+									
+				</select> 
+
+			</div>
+			<div class="col-xs-6">
+				<label>Meat</label>
+				<select id="sel-meat" multiple class="form-control">
+									<option value="none" class="list-group-item">None</option>
+									<option value="bacon" class="list-group-item">Bacon</option>
+									<option value="turkey" class="list-group-item">Turkey</option>
+									
+				</select> 
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<label>Cheese</label>
+				<select id="sel-cheese" multiple class="form-control">
+						<option value="none" class="list-group-item">None</option>
+						<option value="provolone" class="list-group-item">Provolone</option>
+						<option value="swiss" class="list-group-item">Swiss</option>
 						
-	</select> 
-</div>
-<hr>
-<div id="meat">
-	<h3>Meat</h3>
-	<select id="sel-meat">
-						<option value="bacon">Bacon</option>
-						<option value="turkey">Turkey</option>
+				</select>
+	
+			</div>
+			<div class="col-xs-6">
+				<label>Condiments</label>
+				<select id="sel-condiments" multiple class="form-control">
+						<option value="none" class="list-group-item">None</option>
+						<option value="ketchup" class="list-group-item">Ketchup</option>
+						<option value="mustard" class="list-group-item">Mustard</option>
 						
-	</select> 
-	<hr>
-</div>
-<div id="cheese">
-	<h3>Cheese</h3>
-	<select id="sel-cheese">
-						<option value="provolone">Provolone</option>
-						<option value="swiss">Swiss</option>
+				</select> 
+	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<label>Veggies</label>
+				<select id="sel-veggies" multiple class="form-control">
+						<option value="none" class="list-group-item">None</option>
+						<option value="olives" class="list-group-item">Olives</option>
+						<option value="cucumber" class="list-group-item">Cucumbers</option>
 						
-	</select>
-	<hr> 
+				</select> 
+	
+			</div>
+		</div>
+
+		</div>
 </div>
-<div id="condiments">
-	<h3>Condiments</h3>
-	<select id="sel-condiments">
-						<option value="ketchup">Ketchup</option>
-						<option value="mustard">Mustard</option>
-						
-	</select> 
-	<hr>
-</div>
-<div id="veggies">
-	<h3>Veggies</h3>
-	<select id="sel-veggies">
-						<option value="olives">Olives</option>
-						<option value="cucumber">Cucumbers</option>
-						
-	</select> 
-	<hr>
-</div>
-<div id="final-order"></div>
 
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/DOMHandler.js"></script>
 <script type="text/javascript" src="js/SandwichMaker.js"></script>
 <script type="text/javascript" src="js/bread.js"></script>

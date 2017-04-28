@@ -7,9 +7,12 @@ var SandwichMaker = (function() {
 
   // Return the public interface that other code can interact with
   return {
-    addTopping: function(toppingPrice) {
+    addTopping: function(topping, toppingPrice) {
+      var output = document.getElementById("final-order");
+      //output.innerHTML += topping+":"+"$"+Math.round(toppingPrice * 100) / 100+"<br>";
       totalPrice += toppingPrice;
-      document.getElementById("final-order").innerHTML = "The final sandwich price is $" +totalPrice;
+      totalPrice = Math.round(totalPrice * 100) / 100;
+      output.innerHTML = "The final sandwich price is $" +totalPrice+"<br>";
     }
   };
 })();
