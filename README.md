@@ -1,4 +1,4 @@
-# Sandwich Maker
+# Sandwich Maker - COMPLETE
 
 ## Setup
 
